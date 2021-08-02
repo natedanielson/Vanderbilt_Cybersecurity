@@ -4,11 +4,11 @@ Things that I have learned and deployed while in Vanderbilt Cybersecurity class
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of any .yml file may be used to install only certain pieces of it, such as Filebeat.
 
-TODO: Enter the playbook file.
-
-
-
-
+## Playbooks
+[My First Playbook.yml](https://github.com/natedanielson/Vanderbilt_Cybersecurity/blob/main/Playbooks/My%20First%20Playbook) - This playbook loads and enables docker. 
+[Install Elk.yml](https://github.com/natedanielson/Vanderbilt_Cybersecurity/blob/main/Playbooks/Install-ELK) - This playbook installs elk using a docker container.
+[Filebeat.yml](https://github.com/natedanielson/Vanderbilt_Cybersecurity/blob/main/Playbooks/Filebeat) - This playbook installs filebeat.
+[Metricbeat.yml](https://github.com/natedanielson/Vanderbilt_Cybersecurity/blob/main/Playbooks/Metricbeat) - This playbook installs metricbeat.
 
 This document contains the following details:
 
