@@ -15,18 +15,17 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 This document contains the following details:
 
-Description of the Topology
-Access Policies
-ELK Configuration
-
-Beats in Use
-Machines Being Monitored
-
-
-How to Use the Ansible Build
+ - Description of the Topology
+ - Access Policies
+ - ELK Configuration
+ - Beats in Use
+ - Machines Being Monitored
 
 
-Description of the Topology
+## How to Use the Ansible Build
+
+
+### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
 
