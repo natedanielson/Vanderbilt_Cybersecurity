@@ -104,14 +104,22 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
  - SSH into the control node and follow the steps below:
 
-1. Copy the _____ file to _____.
-2. Update the _____ file to include...
-3. Run the playbook, and navigate to ____ to check that the installation worked as expected.
+1. Copy the filebeat-config.yml and metricbeat-config.yml files to /etc/ansible/files.
+2. Update the configuration files to include the IP address of your ELK machine.  The lines that need to be changed are 1106 (elasticsearch) and 1806 (kibana).
+3. Run the playbook, and navigate to ELK-server-public-IP:5601/app/kibana to check that the installation worked as expected.
 
-TODO: Answer the following questions to fill in the blanks:
+Which file is the playbook? 
+ - [Install Elk.yml](https://github.com/natedanielson/Vanderbilt_Cybersecurity/blob/main/Playbooks/Install-ELK)
 
-Which file is the playbook? Where do you copy it?
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-_Which URL do you navigate to in order to check that the ELK server is running?
+Where do you copy it?
+ - /etc/ansible (on your ansible container)
+
+Which file do you update to make Ansible run the playbook on a specific machine? 
+ - /etc/ansible/hosts
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+ - 
+
+Which URL do you navigate to in order to check that the ELK server is running?
 
 As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
