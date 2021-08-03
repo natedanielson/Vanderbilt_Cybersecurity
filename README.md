@@ -81,30 +81,32 @@ The following screenshot displays the result of running docker ps after successf
 ![](Docker%20ps.PNG)
 
 
-Target Machines & Beats
+## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-TODO: List the IP addresses of the machines you are monitoring
+ - Web-1 10.0.0.5
+ - Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 
-Filebeat
-Metricbeat
+ - Filebeat
+ - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 
-Filebeat is a system that is used to track the logs data and render it into readable charts and graphs.
-Metricbeat records metrics from th operating system that is installed on the unit.
-Both of these programs are lightweight virtual machines.
+ - Filebeat is a system that is used to track the logs data and render it into readable charts and graphs.
+ - Metricbeat records metrics from th operating system that is installed on the unit.
+ - Both of these programs are lightweight virtual machines.
 
 
-Using the Playbook
+## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
-SSH into the control node and follow the steps below:
 
-Copy the _____ file to _____.
-Update the _____ file to include...
-Run the playbook, and navigate to ____ to check that the installation worked as expected.
+ - SSH into the control node and follow the steps below:
+
+1. Copy the _____ file to _____.
+2. Update the _____ file to include...
+3. Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 TODO: Answer the following questions to fill in the blanks:
 
