@@ -27,14 +27,14 @@ This document contains the following details:
 
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+Load balancers are designed to take the punishment of the workload when systems try to access its servers.  It is really magical when using load balancers.  For example, the load balancer can create more server space automatically when it needs to.  IF it has different servers on the system then it can clone those to handle the traffic.  The advantage of having the load balancers on a jump box is to make sure that theweb servers don't go down and we can monitor them in a safe enviroment.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-TODO: What does Filebeat watch for?
-TODO: What does Metricbeat record?
+ - Filebeat: This program is used to log the files of web servers.
+ - Metricbeat: This program is used to display the different metrics of an operating system on a server.
 
 The configuration details of each machine may be found below.
 Note: Use the Markdown Table Generator to add/remove values from the table.
@@ -49,33 +49,14 @@ Operating System
 
 
 
-Jump Box
-Gateway
-10.0.0.1
-Linux
+| Name        | Function        | IP Address  | Operating System  |
+| ------------|:---------------:| -----------:| ------------------|
+| Jump-Box    | Provisioner     | 10.0.0.4    |Linux Ubuntu 18.04 |
+| Web-1       | Docker/DVWA server | 10.0.0.5 |Linux Ubuntu 18.04 |
+| Web-2       | Docker/DVWA server | 10.0.0.6 |Linux Ubuntu 18.04 |
+| ELK-Server  | Elk-Stack      | 10.1.0.4     |Linux Ubuntu 18.04 |
 
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-
-
-Access Policies
+## Access Policies
 The machines on the internal network are not exposed to the public Internet.
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
