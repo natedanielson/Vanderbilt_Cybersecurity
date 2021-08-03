@@ -118,8 +118,10 @@ Which file do you update to make Ansible run the playbook on a specific machine?
  - /etc/ansible/hosts
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
- - 
+ - Edit the /etc/ansible/hosts file with the private IP's.  Example below:
+ ![](etc-ansible-hosts.PNG)
 
 Which URL do you navigate to in order to check that the ELK server is running?
+ - http://public_ip_of_the_ELK-server;5601
 
 As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
