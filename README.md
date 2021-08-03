@@ -124,4 +124,11 @@ How do I specify which machine to install the ELK server on versus which to inst
 Which URL do you navigate to in order to check that the ELK server is running?
  - http://public_ip_of_the_ELK-server;5601
 
-As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+## Ansible commands for Elk-server
+1. ssh azureuser@jumpbox private IP - Enters the jump box
+2. Sudo docker container list -a  - This will list all docker containers on the system.  The more you run your ansible playbook the more containers you wil have.
+3. sudo docker start container_name  - This starts the ansible container.
+4. sudo docker attach container_name  - This attaches the container and brings you to root of the container.
+5. cd /etc/ansible  -  This brings you to the actual ansible container to install .yml files and also modify host files.
+6. ansible-playbook insert_playbook_name_here.yml - This will run the playbook. ex. install_elk.yml, metricbeat.yml, etc.
+7. Once everything is installed you can navigate to the elk_server_public_ip:5601/app/kibana to bring up the Kibana gui.
